@@ -1,0 +1,57 @@
+html, body{
+    background-color: #fffaba;
+}
+.strike-through{
+    text-decoration: line-through;
+}
+#title{
+    position: relative;
+    left: 90px;
+    font-family: sans-serif;
+    float: left;
+    margin-left: 20px;
+}
+
+
+.line-rule{
+    position: relative;
+    left: -90px;
+    width: 100%;
+    color: lightblue;
+    background-color: lightblue;
+    height: 2px;
+    border: none;
+
+}
+ul{
+    list-style-type: none;
+}
+#item-input, #add-btn{
+    position: relative;
+    left: 90px;
+    float: left;
+    top: 28px;
+}
+#list{
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 90px;
+}
+#item-input{
+    width: 300px;
+}
+
+.left-rule{
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    left: 80px;
+    width: 4px;
+    background-color: #ffe0e0;
+}
+
+.item{
+    font-family: sans-serif;
+    font-size: 1.6em;
+
+}

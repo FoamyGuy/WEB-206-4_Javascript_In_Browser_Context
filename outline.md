@@ -1,0 +1,47 @@
+- DOM
+  - Finding elements
+  - Navigating with prev / next
+  - Adding new elements
+  - Replacing elements
+  - attributes and data attributes
+  - properties, size, position, style
+
+- Events
+  - Event handlers
+  - button click
+  - propogation
+  - default actions
+  - key events
+  - pointer events
+  - mouse click and motion
+  - touch events
+  - scroll events
+  - focus event
+  - load event
+  - timers
+  - debouncing
+
+- Platform Game
+  - Levels
+  - Actors
+  - drawing
+  - motion and collision
+  - actor updates
+  - key inputs
+  - running the game
+
+- http and forms
+  - http protocol
+  - fetch
+  - sandboxing
+  - http and https
+  - form fields
+  - focus
+  - disabled fields
+  - form
+  - text fields
+  - radios and checkboxes
+  - select fields
+  - file field
+  - local storage data persistence
+  - 

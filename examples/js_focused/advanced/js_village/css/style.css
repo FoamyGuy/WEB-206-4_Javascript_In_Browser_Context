@@ -1,0 +1,66 @@
+html, body{
+  overflow-x: hidden;
+}
+
+html, body{
+  width: 100%;
+  background-color: #4f4f4f;
+}
+
+.inventory{
+  height: 50%;
+  width: 300px;
+  background-color: #2f2f2f;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #D5D5D5;
+}
+
+.build-menu{
+  height: 50%;
+  width: 300px;
+  background-color: #2f2f2f;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #D5D5D5;
+}
+
+.board{
+  /*transform: scale(0.85);*/
+  padding: 14px;
+  margin-top: 8px;
+
+}
+
+.tile{
+  display: inline;
+  padding: 2px;
+
+}
+.row{
+  display: block;
+}
+
+.row:nth-child(odd){
+  margin-top: -15px;
+}
+
+.row:nth-child(even){
+  margin-left: 27px;
+  margin-top: -15px;
+}
+
+.cat-holder{
+  position: fixed;
+}
+.cat{
+  position: relative;
+  top:0;
+  left:0;
+}
+
+.tile img{
+  width: 50px;
+}

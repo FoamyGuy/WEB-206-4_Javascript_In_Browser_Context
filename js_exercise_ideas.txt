@@ -1,0 +1,14 @@
+exercise ideas
+
+- Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
+
+- Make a "clicker game". User accumulates points by clicking a button. User can spend points to get upgrades that allow them to accumlate more points. Example of this type of game: https://www.tetralark.com/ClickerJs/
+
+
+- Code a page with a contact form (name, email, message) on it as well as a submit button. Set up a click listener on the button and when it's clicked check if all of the fields are filled and ensure that the email address contains an "@" sign and a dot.
+
+
+- Code a Todo List application that allows the user to add tasks to it and cross them off once completed. For extra credit save the list in local storage so that the user can resume where they left off.
+
+- Count Down Timer. User sets number of minutes / seconds and clicks a start button to begin. When the countdown reaches 0 show a message. For extra credit play a sound also, and add functionality to pause and resume the count down.
+

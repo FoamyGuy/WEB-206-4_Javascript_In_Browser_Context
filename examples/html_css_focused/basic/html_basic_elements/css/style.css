@@ -1,0 +1,20 @@
+
+body, html{
+    width: 800px
+}
+.example_div{
+    width: 300px;
+    background-color: #9ea1ff;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    padding-left: 10px;
+}
+
+.input_div{
+    margin-top: 20px;
+}
+
+#anchor_example_div{
+    background-color: #20c997;
+}

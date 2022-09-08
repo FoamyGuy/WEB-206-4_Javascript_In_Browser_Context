@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'ZenLoop';
+  src: url('../fonts/ZenLoop/ZenLoop-Regular.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'ZenTokyoZoo';
+  src: url('../fonts/ZenTokyoZoo/ZenTokyoZoo-Regular.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'OtomanopeeOne';
+  src: url('../fonts/OtomanopeeOne/OtomanopeeOne-Regular.ttf')  format('truetype')
+}
+
+.serif{
+    font-family: serif ;
+}
+.sans{
+    font-family: sans-serif ;
+}
+.mono{
+    font-family: monospace;
+}
+
+.label{
+    background-color: #dddddd;
+}
+
+.zenloop{
+    font-family: 'ZenLoop', sans-serif ;
+}
+.zentokyozoo{
+    font-family: 'ZenTokyoZoo', sans-serif ;
+}
+.otomanopeeone{
+    font-family: 'OtomanopeeOne', sans-serif ;
+}
