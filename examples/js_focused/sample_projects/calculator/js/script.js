@@ -12,9 +12,9 @@ allBtns.forEach(
 	function(currentBtn, key, listObj, argument){
 		// currentBtn will be set correctly by the system.
 		// Add a click listener to currentBtn.
-		currentBtn.addEventListener("touchend", function(){ // <-- this function
+		currentBtn.addEventListener("click", function(){ // <-- this function
 																										 // executes whenever
-																										 // currentBtn is 
+																										 // currentBtn is
 																										 // clicked
 			// if it is the equals button
 			if (currentBtn.innerHTML == "="){
@@ -30,36 +30,5 @@ allBtns.forEach(
 				// append the character from the button to the input
 				display.value += currentBtn.innerHTML;
 			}
-		},false); // close click listener
+		}); // close click listener
 	}); // close for each
-    
-    
-
-
-
-
-function doSomethingDynamic(){
-        display.value = "Hello Dynamic";
-}
-
-   
-function doSomething(){
-        display.value = "Hello";
-}
-
-window.onload = function(){
-    var body = document.querySelector("#body");
-    body.style.backgroundColor = "#00FF00";
-}
-
-//$(".jq-test").attr("onclick", "doSomethingDynamic();");
-
-
-    var newBtn = $('<button onclick="doSomethingDynamic();">Dynamic Button</button>');
-    $("body").append(newBtn);
-
-$(document).ready(function() {
-
-    
-
-});
