@@ -12,3 +12,7 @@ exercise ideas
 
 - Count Down Timer. User sets number of minutes / seconds and clicks a start button to begin. When the countdown reaches 0 show a message. For extra credit play a sound also, and add functionality to pause and resume the count down.
 
+
+External Exercise lists:
+- https://mikkegoes.com/javascript-projects-for-beginners/
+- https://jsbeginners.com/javascript-projects-for-beginners/
