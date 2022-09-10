@@ -1,0 +1,16 @@
+#kitty_btn{
+    position: absolute;
+    left: 620px;
+    top: 150px;
+}
+
+
+#kitty_img{
+    max-width: 800px;
+    margin: auto;
+
+}
+
+.hidden{
+    display: none;
+}
