@@ -8,9 +8,11 @@ exercise ideas
 
 - Typing game: Generate a sentence or two randomly, give the user a <textarea> to type into. As they type indicate whether they have entered the sentence perfectly, or if not. Time them and show the time after they've entered the whole thing correctly. Extra credit: show the number of misplaced characters and update it live. Make a "play again" button that user can click to generate a new typing challenge and reset the timer.
 
+- make Lap timer. It counts up when started, show the current time. User can press lap to add a new line to the output with the current laps time. It needs to store the times internally and do math to find the lap times. Extra credit: add a pause/resume button and/or a reset button. Pause/Resume stops and starts the timer from counting. Reset stops it from counting, erases all lap times, and sets the time back to 0.0.
 
 - Make a "clicker game". User accumulates points by clicking a button. User can spend points to get upgrades that allow them to accumlate more points. Example of this type of game: https://www.tetralark.com/ClickerJs/
 
+- implement a connect 4 game board. Initialize the board using for loops and add it to the DOM to show on the page. Users take turns clicking stops to play their turn. The game keeps track of whose turn it is and draws the "checkers" as player place them. extra credit: store an array representation of the game board and make a function that checks if a player has won based on the current board.
 
 - Code a page with a contact form (name, email, message) on it as well as a submit button. Set up a click listener on the button and when it's clicked check if all of the fields are filled and ensure that the email address contains an "@" sign and a dot.
 
