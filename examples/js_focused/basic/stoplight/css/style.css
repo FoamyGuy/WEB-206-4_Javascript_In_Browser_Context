@@ -1,0 +1,36 @@
+.stoplight-container{
+    padding: 20px;
+    width: fit-content;
+    background-color: black;
+}
+
+.stoplight{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.red-stoplight.on{
+    background-color: red;
+}
+
+.yellow-stoplight.on{
+    background-color: #ffff00;
+}
+
+.green-stoplight.on{
+    background-color: rgb(0, 255, 0);
+}
+
+.red-stoplight.off{
+    background-color: #320000;
+}
+
+.yellow-stoplight.off{
+    background-color: #323200;
+}
+
+.green-stoplight.off{
+    background-color: rgb(0, 50, 0);
+}

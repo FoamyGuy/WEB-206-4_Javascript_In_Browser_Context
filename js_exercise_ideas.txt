@@ -2,7 +2,12 @@ exercise ideas
 
 - make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they
 
+- implement a stoplight with red green and yellow circles. Write javascript code that uses setTimeout or setInterval to change the stoplight state between green yellow and red similar to how real stoplights work. Extra credit, add a "push to walk" button to the page that will interrupt the cycle to allow a pedestrian to pass in the direction they specify.
+
 - Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
+
+- Typing game: Generate a sentence or two randomly, give the user a <textarea> to type into. As they type indicate whether they have entered the sentence perfectly, or if not. Time them and show the time after they've entered the whole thing correctly. Extra credit: show the number of misplaced characters and update it live. Make a "play again" button that user can click to generate a new typing challenge and reset the timer.
+
 
 - Make a "clicker game". User accumulates points by clicking a button. User can spend points to get upgrades that allow them to accumlate more points. Example of this type of game: https://www.tetralark.com/ClickerJs/
 
