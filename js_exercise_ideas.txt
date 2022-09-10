@@ -2,7 +2,7 @@ exercise ideas
 
 - make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they
 
-- implement a stoplight with red green and yellow circles. Write javascript code that uses setTimeout or setInterval to change the stoplight state between green yellow and red similar to how real stoplights work. Extra credit, add a "push to walk" button to the page that will interrupt the cycle to allow a pedestrian to pass in the direction they specify.
+- implement a stoplight with red green and yellow circles. Write javascript code that uses setTimeout or setInterval to change the stoplight state between green yellow and red similar to how real stoplights work. Extra credit, add a "push to walk" button to the page that will interrupt the cycle to allow a pedestrian to pass in the direction they specify. Double extra credit: add a second stoplight that represents the one going the perpendicular direction (i.e. while one is green the other should be red. Yellow as a buffer before the other way turns green.)
 
 - Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
 
