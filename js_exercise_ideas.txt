@@ -2,6 +2,10 @@ exercise ideas
 
 - make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they
 
+- image rotator. Place an <img> on a page with a <button>. When the user clicks the button rotate the image by a few degrees. If user keeps clicking, the images keeps rotating, eventually it will have turned a full 360 degrees.
+
+- Mouse avoider. Place a  <img> on a page with any src you like, if it's a large image, use CSS to shrink it down to small or medium sized. When the users mouse hovers the image move it so that it will feel like it's avoiding the mouse. Move it far enough that it won't be hovered anymore when it lands. If user moves mouse back to it then it jumps again to another new location. implement logic that ensures the image stays within the bounds of the window so that it can't get "lost" outside of the page.
+
 - implement a stoplight with red green and yellow circles. Write javascript code that uses setTimeout or setInterval to change the stoplight state between green yellow and red similar to how real stoplights work. Extra credit, add a "push to walk" button to the page that will interrupt the cycle to allow a pedestrian to pass in the direction they specify. Double extra credit: add a second stoplight that represents the one going the perpendicular direction (i.e. while one is green the other should be red. Yellow as a buffer before the other way turns green.)
 
 - Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
