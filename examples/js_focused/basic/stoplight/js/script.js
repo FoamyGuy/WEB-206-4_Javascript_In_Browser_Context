@@ -10,6 +10,7 @@ const $red_light = document.querySelector(".red-stoplight");
 const $yellow_light = document.querySelector(".yellow-stoplight");
 const $green_light = document.querySelector(".green-stoplight");
 
+const $walk_sign = document.querySelector("#walk-sign");
 let current_light = RED;
 
 function turn_on_light($light) {
@@ -27,6 +28,7 @@ function display_current_light() {
         turn_off_light($yellow_light);
         turn_off_light($green_light);
         turn_on_light($red_light);
+        $walk_sign.src = "dont_walk.png"
 
         setTimeout(function () {
             current_light = GREEN;
@@ -36,6 +38,7 @@ function display_current_light() {
         turn_off_light($red_light);
         turn_off_light($green_light);
         turn_on_light($yellow_light);
+        $walk_sign.src = "dont_walk.png"
         setTimeout(function () {
             current_light = RED;
             display_current_light();
@@ -44,6 +47,7 @@ function display_current_light() {
         turn_off_light($yellow_light);
         turn_off_light($red_light);
         turn_on_light($green_light);
+        $walk_sign.src = "walk.png"
         setTimeout(function () {
             current_light = YELLOW;
             display_current_light();
