@@ -1,6 +1,6 @@
 exercise ideas
 
-- make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they
+- make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they are away from the kitty showing.
 
 - image rotator. Place an <img> on a page with a <button>. When the user clicks the button rotate the image by a few degrees. If user keeps clicking, the images keeps rotating, eventually it will have turned a full 360 degrees.
 
