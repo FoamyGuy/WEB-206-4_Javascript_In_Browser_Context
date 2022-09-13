@@ -2,11 +2,19 @@ exercise ideas
 
 - make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they are away from the kitty showing.
 
+- Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
+
 - image rotator. Place an <img> on a page with a <button>. When the user clicks the button rotate the image by a few degrees. If user keeps clicking, the images keeps rotating, eventually it will have turned a full 360 degrees.
 
 - Visual FizzBuzz - Implement FizzBuzz solution showing the output with the DOM. You'll need 3 unique identifiable output elements. Output the results for numbers 0-100
 
 - Mouse avoider. Place a  <img> on a page with any src you like, if it's a large image, use CSS to shrink it down to small or medium sized. When the users mouse hovers the image move it so that it will feel like it's avoiding the mouse. Move it far enough that it won't be hovered anymore when it lands. If user moves mouse back to it then it jumps again to another new location. implement logic that ensures the image stays within the bounds of the window so that it can't get "lost" outside of the page.
+
+- Code a page with a contact form (name, email, message) on it as well as a submit button. Set up a click listener on the button and when it's clicked check if all of the fields are filled and ensure that the email address contains an "@" sign and a dot.
+
+- make a Lap timer. It counts up when started, show the current time. User can press lap to add a new line to the output with the current laps time. It needs to store the times internally and do math to find the lap times. Extra credit: add a pause/resume button and/or a reset button. Pause/Resume stops and starts the timer from counting. Reset stops it from counting, erases all lap times, and sets the time back to 0.0.
+
+- Count Down Timer. User sets number of minutes / seconds and clicks a start button to begin. When the countdown reaches 0 show a message. For extra credit play a sound also, and add functionality to pause and resume the count down.
 
 - implement a stoplight with red green and yellow circles. Write javascript code that uses setTimeout or setInterval to change the stoplight state between green yellow and red similar to how real stoplights work. Extra credit, add a "push to walk" button to the page that will interrupt the cycle to allow a pedestrian to pass in the direction they specify. Double extra credit: add a second stoplight that represents the one going the perpendicular direction (i.e. while one is green the other should be red. Yellow as a buffer before the other way turns green.)
 
@@ -14,22 +22,13 @@ exercise ideas
 
 - mastermind game https://en.wikipedia.org/wiki/Mastermind_(board_game). The game chooses randomly 4 colors (from a total of 6 possible) for the "target pegs". User makes a guess at the colors, game reports back how many correct colors and how many correct colors in the correct place. If the player doesn't get it after 12 tries they lose the round. Extra credit increase the number of target pegs and/or available colors. Bonus extra credit: make a scoring system that gives the player points based on how few guesses they needed to get the pattern, keep their score in local storage so that it will persist.
 
-- Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
-
 - Typing game: Generate a sentence or two randomly, give the user a <textarea> to type into. As they type indicate whether they have entered the sentence perfectly, or if not. Time them and show the time after they've entered the whole thing correctly. Extra credit: show the number of misplaced characters and update it live. Make a "play again" button that user can click to generate a new typing challenge and reset the timer.
-
-- make Lap timer. It counts up when started, show the current time. User can press lap to add a new line to the output with the current laps time. It needs to store the times internally and do math to find the lap times. Extra credit: add a pause/resume button and/or a reset button. Pause/Resume stops and starts the timer from counting. Reset stops it from counting, erases all lap times, and sets the time back to 0.0.
 
 - Make a "clicker game". User accumulates points by clicking a button. User can spend points to get upgrades that allow them to accumlate more points. Example of this type of game: https://www.tetralark.com/ClickerJs/
 
 - implement a connect 4 game board. Initialize the board using for loops and add it to the DOM to show on the page. Users take turns clicking stops to play their turn. The game keeps track of whose turn it is and draws the "checkers" as player place them. extra credit: store an array representation of the game board and make a function that checks if a player has won based on the current board.
 
-- Code a page with a contact form (name, email, message) on it as well as a submit button. Set up a click listener on the button and when it's clicked check if all of the fields are filled and ensure that the email address contains an "@" sign and a dot.
-
-
 - Code a Todo List application that allows the user to add tasks to it and cross them off once completed. For extra credit save the list in local storage so that the user can resume where they left off.
-
-- Count Down Timer. User sets number of minutes / seconds and clicks a start button to begin. When the countdown reaches 0 show a message. For extra credit play a sound also, and add functionality to pause and resume the count down.
 
 
 External Exercise lists:
