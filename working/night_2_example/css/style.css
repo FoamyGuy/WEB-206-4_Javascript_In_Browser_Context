@@ -1,0 +1,44 @@
+/*
+:root{
+    background-color: red;
+}
+*/
+
+/*
+
+body{
+    outline: 2px solid blue;
+}
+
+p{
+    outline: 2px solid red;
+}
+
+h1{
+    outline: 2px solid #ffff00;
+}
+
+a {
+    outline: 2px solid #ff00ff;
+}*/
+
+.important{
+    background-color: #bbbbff;
+}
+
+.last{
+    background-color: #ffbbbb;
+}
+
+.second{
+    background-color: #bbffbb;
+}
+
+.fizz{
+    background-color: #aaaaff;
+}
+
+.buzz{
+    font-weight: bold;
+    color: darkred;
+}

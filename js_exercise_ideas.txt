@@ -2,6 +2,15 @@ exercise ideas
 
 - make a page with a button and a hidden image of a kitty on it. Count the users clicks on the button. When they've clicked 10 times make the picture of the kitty visible. Extra credit: show a number that shows the user how many clicks they are away from the kitty showing.
 
+- make a background color changing page. It will contain a text input element and a set color button. When the user presses the button it will set the background color of the page to the he color value entered into the text input.
+
+- counter page. Make a page with two buttons: count up and count down. The page shows the current number in a large / prominent text element. When the user clicks the count up button increase the number by 1, and when the user clicks the dount down button the number counts down by one. Extra credit: add a reset button that resets the counter to 0. Bonus extra credit: store the number in local storage so it can persist through page loads and keep track of the number after the user leaves and comes back.
+
+- Converters page. Create a page that converts between Fahrenheit and celsius. The user can enter either unit and click a button to convert to the other unit. Extra credit make it calculate automatically whenever the user enters a valid number, so they don't have to click a button to make the conversion happen. Bonus Extra Credit: Add more types of converters, for time, distance, weight or any other units, add as many other converters as you can think of.
+
+- create a tip calculator. The user can input the total cost of the bill and choose the desired tip percentage from a dropdown. The page will show the calculated total + tip amount. Extra credit: add a number text input that the user can use to specify a number of people to split the check between. The page will output each share of the total + tip amount based on the number of people specified.
+
+
 - Code a page with a hide / show button. The text of the button will change when it gets clicked. When the user clicks "Show" reveal a <div> with a paragraph and and <img> tag inside of it. When the user clicks "Hide" make the <div> disappear. User can click multiple times to toggle visibility back and forth
 
 - image rotator. Place an <img> on a page with a <button>. When the user clicks the button rotate the image by a few degrees. If user keeps clicking, the images keeps rotating, eventually it will have turned a full 360 degrees.
