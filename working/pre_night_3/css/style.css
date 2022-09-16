@@ -1,0 +1,22 @@
+.delete-icon {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+#confirmation-prompt {
+    width: 400px;
+    height: 200px;
+    background-color: #bbbbbb;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none;
+}

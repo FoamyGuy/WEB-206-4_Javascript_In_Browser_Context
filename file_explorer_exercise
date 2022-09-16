@@ -1,0 +1,19 @@
+given a list of objects representing files such as:
+
+const filesData = [
+    {"owner": "timc", "filename": "helloworld.js"},
+    {"owner": "timc", "filename": "towersofhanoi.js"},
+]
+
+Loop over the files in the list and add each one to a <ul> on the page.
+
+For each file show it's owner and filename as well as a delete icon
+
+When the delete icon is clicked show a dialog prompt that askes the user to confirm they want to delete the given file, include the owner of the file in the prompt as well.
+
+Use data-attributes on the delete icon to store the filename and owner and access them from there inside of the click listener function for the delete icon.
+
+If the user clicks yes to the prompt console log out a message indicating we are deleting the file, and remove it from the <ul> and hide the confirmation.
+
+If the user clicks no to the prompt hide the confirmation without doing anything else.
+
