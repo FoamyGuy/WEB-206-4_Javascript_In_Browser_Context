@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+}
+
+section {
+    height: 100%
+}
+
+
+.menu {
+    width: 35%;
+    min-width: 350px;
+    background-color: #aa33aa;
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.output-section-label-container{
+    width: 100%;
+    text-align: center;
+}
+
+.output-section label{
+    top: 10px;
+    position: relative;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2.0em;
+    margin: auto;
+    width: 400px;
+}
+
+.output-section {
+    position: relative;
+    width: 65%;
+    min-width: 500px;
+    background-color: #b186dc;
+}
+.output-donut {
+    left: 50%;
+    transform: translateX(-132px);
+    top: 100px;
+}
+
+.output-section * {
+    position: absolute;
+}
+
+.menu-item {
+    width: 28%;
+    min-width: 90px;
+    margin: 6px;
+}
+
+.menu-header {
+    font-weight: bold;
+    font-size: 1.33em;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.output-icing {
+    top: 20px;
+    left: 18px;
+}
+
+.output-toppings {
+    top: 30px;
+    left: 30px;
+}
+
+.output-toppings[src*="img/toppings_4.svg"] {
+    top: 26px;
+    left: 26px;
+}
+
+.output-finishings {
+    top: 21px;
+    left: 19px;
+}
+
+.output-finishings[src*="drizzle"] {
+    top: 32px;
+    left: 28px;
+}
