@@ -1,4 +1,4 @@
-const DONUT_BASES = ["img/base_0.svg", "img/base_1.svg", "img/base_2.svg"];
+const DONUT_BASES = ["img/base_0.svg", "img/base_1_v2.svg", "img/base_2.svg"];
 
 const DONUT_ICINGS = [
     "img/icing_0.svg", "img/icing_1.svg", "img/icing_2.svg",
