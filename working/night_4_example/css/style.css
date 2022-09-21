@@ -1,0 +1,12 @@
+p {
+/*    text-align: center;*/
+    position: relative;
+    width: 400px;
+    margin: 100px auto;
+}
+
+img{
+    position: absolute;
+    max-width: 200px;
+    max-height: 200px;
+}
