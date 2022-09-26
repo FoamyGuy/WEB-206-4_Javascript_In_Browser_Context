@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <!--<link href="css/style.css" rel="stylesheet">-->
+  <style>
+      #container {
+          width: 400px;
+          height: 300px;
+          background-color: #00b89c;
+      }
+
+      body {
+          height: 100vh;
+          background: beige;
+      }
+
+      .dot {
+          height: 8px;
+          width: 8px;
+          border-radius: 4px;
+          background-color: blue;
+          position: absolute;
+      }
+
+      #draggable-bar{
+          height: 20px;
+          width: 60px;
+          background-color: orange;
+      }
+
+      #progress{
+          border-bottom: 8px solid blue;
+          width: 0;
+          position: fixed;
+          top: 0;
+          left: 0;
+      }
+
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <button id="test-btn">Click</button>
+</div>
+<button id="event-obj-btn">Event Object</button>
+
+<p>Drag the bar to change its width:</p>
+<div id="draggable-bar"></div>
+
+<div id="progress"></div>
+
+<p>Name: <input type="text" data-help="Your full name"></p>
+<p>Age: <input type="text" data-help="Your age in years"></p>
+<p id="help"></p>
+
+<script>
+    // window.addEventListener("click", function (evt) {
+    //     console.log("Window click");
+    // });
+    let $container = document.querySelector("#container");
+    let $testBtn = document.querySelector("#test-btn");
+
+    // $container.addEventListener('click', function (evt) {
+    //     console.log("Container click");
+    // });
+
+    $testBtn.addEventListener("click", function (evt) {
+        console.log("Button click");
+        evt.stopPropagation();
+        //evt.stopImmediatePropagation();
+    });
+
+
+    /*    function once(evt) {
+        console.log("clicked once, no more");
+        $testBtn.removeEventListener("click", once);
+    }
+
+    $testBtn.addEventListener("click", once);*/
+
+
+    let $evtObjBtn = document.querySelector("#event-obj-btn");
+    $evtObjBtn.addEventListener("mousedown", function (evt) {
+        evt.preventDefault();
+        console.log(evt);
+        console.log(evt.buttons);
+        if (evt.button === 0) {
+            console.log("Left button");
+        } else if (evt.button === 1) {
+            console.log("Middle button");
+        } else if (evt.button === 2) {
+            console.log("Right button");
+        }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+        console.log(evt.key);
+        if (evt.key === "v" && evt.shiftKey) {
+            //console.log("v pressed, setting background");
+            document.body.style.backgroundColor = "violet";
+        }
+    });
+
+    window.addEventListener("keyup", function (evt) {
+        if (evt.key === "v") {
+            document.body.style.backgroundColor = "";
+        }
+    });
+
+
+    // window.addEventListener("click", function (evt) {
+    //     let dot = document.createElement("div");
+    //     console.log(dot);
+    //     dot.className = "dot";
+    //     dot.style.left = (evt.pageX - 4) + "px";
+    //     dot.style.top = (evt.pageY - 4) + "px";
+    //     document.body.appendChild(dot);
+    // });
+
+
+    let lastX;  // Tracks the last observed mouse x position
+    let bar = document.querySelector("#draggable-bar");
+    bar.addEventListener("mousedown", function(evt){
+        if (evt.button === 0){
+            lastX = evt.clientX;
+            window.addEventListener("mousemove", moved);
+            evt.preventDefault();
+        }
+    });
+
+    function moved(evt){
+        if (evt.buttons === 0){
+            window.removeEventListener("mousemove", moved);
+        }else{
+            let dist = evt.clientX - lastX;
+            let newWidth = Math.max(10, bar.offsetWidth + dist);
+            bar.style.width = newWidth + "px";
+            lastX = evt.clientX;
+        }
+    }
+
+
+    document.body.appendChild(document.createTextNode(
+        "supercalifragilisticexpialidocious ".repeat(1000)
+    ));
+
+    let progress = document.querySelector("#progress");
+    window.addEventListener("scroll", function(){
+       let max = document.body.scrollHeight - innerHeight;
+       progress.style.width = `${(pageYOffset / max) * 100}%`;
+    });
+
+
+    let help = document.querySelector("#help");
+    let fields = document.querySelectorAll("input");
+
+    for (let field of Array.from(fields)){
+        field.addEventListener("focus", function(evt){
+            let text = evt.target.getAttribute("data-help");
+            help.textContent = text;
+        });
+        field.addEventListener("blur", function(evt){
+            help.textContent = "";
+        });
+    }
+
+</script>
+</body>
+</html>
