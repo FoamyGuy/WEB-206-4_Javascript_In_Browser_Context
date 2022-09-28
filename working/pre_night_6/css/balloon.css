@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+/*body {
+    text-align: center;
+}*/
+
+#balloon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+
+
+}

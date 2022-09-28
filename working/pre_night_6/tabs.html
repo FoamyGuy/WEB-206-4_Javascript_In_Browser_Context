@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title></title>
+<link href="css/tabs.css" rel="stylesheet">
+</head>
+<body>
+<tab-panel>
+  <div data-tabname="one">Tab one</div>
+  <div data-tabname="two">Tab two</div>
+  <div data-tabname="three">Tab three</div>
+</tab-panel>
+<script>
+    let currentlyShowing = 0;
+    let tabContents = []
+
+  function asTabs(node) {
+    const $btnContainer = document.createElement("div");
+    const childArray = Array.from(node.children);
+    console.log(childArray);
+    for (let i = 0; i < childArray.length; i++){
+        let $tabContent = childArray[i];
+        console.log(i);
+        console.log($tabContent.getAttribute("data-tabname"));
+
+        if (i > 0){
+            $tabContent.style.display = "none";
+        }
+
+
+        let $newBtn = document.createElement("button");
+        $newBtn.innerText = $tabContent.getAttribute("data-tabname");
+        $newBtn.addEventListener("click", function(){
+            tabContents[currentlyShowing].style.display = "none";
+            $btnContainer.children[currentlyShowing].classList.remove("selected");
+            tabContents[i].style.display = "block"
+            currentlyShowing = i;
+            $newBtn.classList.add("selected");
+        });
+        $btnContainer.append($newBtn);
+        tabContents.push($tabContent);
+        node.prepend($btnContainer);
+        console.log(tabContents);
+    }
+  }
+  asTabs(document.querySelector("tab-panel"));
+</script>
+
+</body>
+</html>
