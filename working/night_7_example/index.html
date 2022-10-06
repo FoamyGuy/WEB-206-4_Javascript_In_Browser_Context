@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<p>Normal HTML here.</p>
+
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="red"/>
+    <stop offset="50%" stop-color="black" stop-opacity="0"/>
+    <stop offset="100%" stop-color="blue"/>
+  </linearGradient>
+  <circle r="50" cx="50" cy="50" fill="url(#Gradient2)"/>
+  <rect x="120" y="5" width="90" height="90" stroke="blue" fill="none"/>
+</svg>
+
+<p>Before canvas.</p>
+<canvas width="400" height="200"></canvas>
+<p>After canvas.</p>
+
+<script src="js/script.js"></script>
+</body>
+</html>
