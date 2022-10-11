@@ -17,5 +17,10 @@ for(let i = 0; i < simpleLevel.rows.length; i++){
 */
 
 let simpleLevel = new Level(simpleLevelPlan);
-let display = new DOMDisplay(document.body, simpleLevel);
-display.syncState(State.start(simpleLevel));
+runGame(GAME_LEVELS, DOMDisplay);
+
+
+//runLevel(simpleLevel, DOMDisplay)
+
+//let display = new DOMDisplay(document.body, simpleLevel);
+//display.syncState(State.start(simpleLevel));
