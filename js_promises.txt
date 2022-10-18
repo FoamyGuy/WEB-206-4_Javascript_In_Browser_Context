@@ -1,0 +1,7 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+
+https://javascript.info/promise-basics
+
+https://www.youtube.com/watch?v=DHvZLI7Db8E
+
+https://www.youtube.com/watch?v=PoRJizFvM7s
