@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<select id="number-select" multiple>
+  <option value="1">0001</option>
+  <option value="2">0010</option>
+  <option value="4">0100</option>
+  <option value="8">1000</option>
+</select> = <span id="output">0</span>
+<script>
+  let select = document.querySelector("#number-select");
+  let output = document.querySelector("#output");
+  select.addEventListener("change", () => {
+    let number = 0;
+    for (let option of Array.from(select.options)) {
+      if (option.selected) {
+        number += Number(option.value);
+      }
+    }
+    output.textContent = number;
+  });
+</script>
+
+
+Color:
+<label>
+   <input type="radio" name="color" value="orange"> Orange
+</label>
+<label>
+  <input type="radio" name="color" value="lightgreen"> Green
+</label>
+<label>
+  <input type="radio" name="color" value="lightblue"> Blue
+</label>
+<script>
+  let buttons = document.querySelectorAll("[name=color]");
+  for (let button of Array.from(buttons)) {
+    button.addEventListener("change", () => {
+      document.body.style.background = button.value;
+    });
+  }
+</script>
+
+<label>
+  <input type="checkbox" id="purple"> Make this page purple
+</label>
+<script>
+    let checkbox = document.querySelector("#purple");
+    checkbox.addEventListener("change", () => {
+
+        console.log(checkbox.value);
+        document.body.style.background =
+            checkbox.checked ? "mediumpurple" : "";
+    });
+</script>
+
+<textarea id="auto-fill-btn-text"></textarea>
+<script>
+    let textarea = document.querySelector("#auto-fill-btn-text");
+    textarea.addEventListener("keydown", event => {
+        // The key code for F2 happens to be 113
+        if (event.keyCode == 113) {
+            replaceSelection(textarea, "Khasekhemwy");
+            event.preventDefault();
+
+        }
+    });
+
+    function replaceSelection(field, word) {
+        let from = field.selectionStart, to = field.selectionEnd;
+        field.value = field.value.slice(0, from) + word +
+            field.value.slice(to);
+        // Put the cursor after the word
+        field.selectionStart = from + word.length;
+        field.selectionEnd = from + word.length;
+    }
+</script>
+
+
+<form action="example/submit.html">
+  Value: <input type="text" name="value">
+  <button type="submit">Save</button>
+</form>
+<script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit", event => {
+        console.log("Saving value", form.elements.value.value);
+        event.preventDefault();
+
+    });
+</script>
+
+
+<input type="text"> <a href=".">(help)</a>
+<button onclick="console.log('ok')">OK</button>
+
+<button>I'm all right</button>
+<button disabled>I'm out</button>
+
+<form method="GET" action="example/data.txt">
+  <p>Name: <input type="text" name="name"></p>
+  <p>Message: <textarea name="message"></textarea></p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
+<p><input id="test-text-input" type="text" value="abc"> (text)</p>
+<p><input id="password-text-input" type="password" value="abc"> (password)</p>
+<p><input type="checkbox" checked> (checkbox)</p>
+<p><input type="radio" value="A" name="choice">
+  <input type="radio" value="B" name="choice" checked>
+  <input type="radio" value="C" name="choice"> (radio)</p>
+<p><input type="file"> (file)</p>
+
+
+<textarea>
+  one
+  two
+  three
+</textarea>
+
+<select id="snack-chooser" multiple>
+  <option>Pancakes</option>
+  <option>Pudding</option>
+  <option>Ice cream</option>
+</select>
+
+<script src="js/script.js"></script>
+</body>
+</html>

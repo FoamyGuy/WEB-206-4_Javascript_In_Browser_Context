@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+      /*    #your_div_id{
+              background-color: yellowgreen;
+              height: 300px;
+              width: 300px;
+          }*/
+  </style>
+</head>
+<body>
+
+<form>
+  <input type="text" name="email_address">
+  <input type="submit" value="Submit">
+</form>
+<!--<div id="your_div_id">-->
+
+<select multiple>
+  <option value="1">0001</option>
+  <option value="2">0010</option>
+  <option value="4">0100</option>
+  <option value="8">1000</option>
+</select> = <span id="output">0</span>
+<script>
+    let select = document.querySelector("select");
+    let output = document.querySelector("#output");
+    select.addEventListener("change", () => {
+        let number = 0;
+        for (let option of Array.from(select.options)) {
+            if (option.selected) {
+                number += Number(option.value);
+            }
+        }
+        output.textContent = number;
+    });
+</script>
+
+
+<input id="file-input" type="file" multiple>
+<script>
+  let input = document.querySelector("#file-input");
+  input.addEventListener("change", () => {
+      console.log("file selected");
+    for (let file of Array.from(input.files)) {
+      let reader = new FileReader();
+      reader.addEventListener("load", () => {
+        console.log("File", file.name, "starts with",
+                    reader.result.slice(0, 20));
+      });
+      reader.readAsText(file);
+    }
+  });
+</script>
+
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
